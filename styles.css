@@ -539,8 +539,8 @@ body {
   height: 633px;
   padding-left: 137px;
   padding-right: 137px;
-  padding-top: 63px;
-  padding-bottom: 63px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background: #eb6a5e;
   overflow: hidden;
   flex-direction: column;
@@ -562,20 +562,24 @@ body {
 .footer-text {
   width: 947px;
   color: #fff9f2;
-  font-size: 27px;
+  font-size: 22px;
   font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
 }
 
 .social-links {
-  width: 776px;
-  height: 178px;
+  width: 756px;
+  height: 100px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
 }
 
 .social-link {
+  flex: 1;
   align-self: stretch;
   padding-left: 40px;
   padding-right: 40px;
@@ -588,27 +592,30 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  display: inline-flex;
+  display: flex;
 }
 
 .social-link-orange {
   left: 0px;
   top: 35px;
+  background-size: cover;
 }
 
 .social-link-brown {
   left: 393px;
   top: 35px;
+  background-size: cover;
 }
 
 .social-link-purple {
   left: 0px;
-  top: 111.5px;
+  top: 120px;
 }
 
 .social-link-blue {
   left: 393px;
-  top: 111.5px;
+  top: 120px;
+  background-size: cover;
 }
 
 .social-icon {
@@ -618,8 +625,27 @@ body {
   overflow: hidden;
 }
 
+.social-icon-orange {
+  background-image: url(/image_assets/Instagram.svg);
+  background-size: 100%;
+}
+
+.social-icon-brown {
+  background-image: url(/image_assets/Brown\ IG.svg);
+  background-size: 100%;
+}
+
+.social-icon-purple {
+  background-image: url(/image_assets/LinkedIn.svg);
+  background-size: 100%;
+}
+
+.social-icon-blue {
+  background-image: url(/image_assets/People.svg);
+  background-size: 100%;
+}
+
 .social-icon-orange:before {
-  content: "";
   width: 42px;
   height: 42px;
   left: 0px;
@@ -629,7 +655,6 @@ body {
 }
 
 .social-icon-brown:before {
-  content: "";
   width: 42px;
   height: 42px;
   left: 0px;
@@ -639,7 +664,6 @@ body {
 }
 
 .social-icon-purple:before {
-  content: "";
   width: 42px;
   height: 42px;
   left: 0px;
@@ -649,7 +673,6 @@ body {
 }
 
 .social-icon-blue:before {
-  content: "";
   width: 42px;
   height: 31.5px;
   left: 0px;
@@ -698,4 +721,31 @@ body {
   position: absolute;
   background: rgba(235, 106, 94, 0.2);
   z-index: 5;
+}
+
+.credit-line {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  background: #496baa;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.credit-text {
+  color: #fff9f2;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.design-portfolio-link {
+  text-decoration: underline;
+  color: #eb6a5e;
+  cursor: pointer;
 }
