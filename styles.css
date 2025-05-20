@@ -754,6 +754,16 @@ body {
 
 /* <!----Responsive Styles----> */
 
+@media (max-width: 1187px) {
+  .projects-subtitle {
+    display: none;
+  }
+
+  .projects-quote {
+    display: none;
+  }
+}
+
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
   .container {
@@ -787,16 +797,25 @@ body {
   }
 
   .projects-header {
-    padding: 40px 20px; /* Adjust padding */
+    padding: 20px; /* Adjust padding */
   }
 
   .projects-title {
     font-size: 36px; /* Adjust font size */
+    margin-bottom: 12px;
   }
 
-  .projects-text,
-  .projects-quote {
+  .projects-subtitle {
+    display: none;
+  }
+
+  .projects-text {
     font-size: 20px; /* Adjust font size */
+    line-height: 1.5; /* Increase line height for readability */
+  }
+
+  .projects-quote {
+    display: none;
   }
 
   .social-links {
