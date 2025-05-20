@@ -156,6 +156,8 @@ body {
 .about-description {
   width: 1166px;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .description-text {
@@ -750,9 +752,7 @@ body {
   cursor: pointer;
 }
 
-/* ... existing styles ... */
-
-/* Responsive Styles */
+/* <!----Responsive Styles----> */
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
@@ -768,22 +768,22 @@ body {
   .hero-title {
     font-size: 150px; /* Adjust font size for smaller screens */
     line-height: 150px; /* Adjust line height */
+    display: none;
   }
 
   .hero-image {
     width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
   }
 
-  .about-section,
+  .hero-tagline {
+    display: none;
+  }
+
   .projects-header,
   .projects-section {
     padding-left: 20px; /* Reduce padding */
     padding-right: 20px; /* Reduce padding */
-  }
-
-  .cta-button {
-    width: 100%; /* Full width for buttons */
   }
 
   .projects-header {
@@ -847,4 +847,85 @@ body {
   }
 }
 
-/* ... rest of the existing styles ... */
+/* ... existing styles ... */
+
+/* Responsive Styles for About Section */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 45px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center align text */
+  }
+
+  .about-title {
+    width: 100%; /* Full width for title */
+    font-size: 36px; /* Adjust font size */
+    line-height: 1.2; /* Increase line height for readability */
+    padding-left: 15%; /* Add padding */
+    padding-right: 15%; /* Add padding */
+    padding-top: 20px;
+  }
+
+  .about-description {
+    width: 100%; /* Full width for description */
+    font-size: 16px; /* Adjust font size */
+    padding-left: 20%; /* Add padding */
+    padding-right: 20%; /* Add padding */
+  }
+
+  .about-title {
+    font-size: 18px; /* Adjust font size for the title */
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.5; /* Increase line height for readability */
+    padding: 0 10px; /* Add padding for better spacing */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .span-title {
+    font-size: 24px; /* Adjust font size for span title */
+    line-height: 1.2; /* Increase line height for readability */
+  }
+
+  .about-description {
+    font-size: 16px; /* Adjust font size for description */
+    line-height: 1.5; /* Increase line height for readability */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .description-text {
+    font-size: 18px; /* Adjust font size for description text */
+    line-height: 1.5; /* Increase line height for readability */
+  }
+
+  .emoji {
+    font-size: 36px; /* Adjust emoji size */
+  }
+
+  .cta-button {
+    width: 100%; /* Full width for button */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 0px; /* Adjust padding */
+
+    .cta-text {
+      font-size: 18px; /* Adjust button text size */
+    }
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 24px; /* Further reduce font size for mobile */
+  }
+
+  .description-text {
+    font-size: 16px; /* Further adjust font size for mobile */
+  }
+
+  .emoji {
+    font-size: 30px; /* Further adjust emoji size */
+  }
+}
