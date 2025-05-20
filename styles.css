@@ -749,3 +749,102 @@ body {
   color: #eb6a5e;
   cursor: pointer;
 }
+
+/* ... existing styles ... */
+
+/* Responsive Styles */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .hero-section {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 50px 0; /* Reduce padding */
+  }
+
+  .hero-title {
+    font-size: 150px; /* Adjust font size for smaller screens */
+    line-height: 150px; /* Adjust line height */
+  }
+
+  .hero-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .about-section,
+  .projects-header,
+  .projects-section {
+    padding-left: 20px; /* Reduce padding */
+    padding-right: 20px; /* Reduce padding */
+  }
+
+  .cta-button {
+    width: 100%; /* Full width for buttons */
+  }
+
+  .projects-header {
+    padding: 40px 20px; /* Adjust padding */
+  }
+
+  .projects-title {
+    font-size: 36px; /* Adjust font size */
+  }
+
+  .projects-text,
+  .projects-quote {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack social links vertically */
+    align-items: center; /* Center align */
+  }
+
+  .social-link {
+    width: 100%; /* Full width for social links */
+    margin-bottom: 10px; /* Space between links */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 100px; /* Further reduce font size */
+    line-height: 100px; /* Adjust line height */
+  }
+
+  .cta-text {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .about-title {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .description-text,
+  .description-underline {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .project-title {
+    font-size: 36px; /* Adjust font size */
+  }
+
+  .button-text {
+    font-size: 20px; /* Adjust button text size */
+  }
+
+  .footer-title {
+    font-size: 60px; /* Adjust footer title size */
+  }
+
+  .footer-text {
+    font-size: 18px; /* Adjust footer text size */
+  }
+}
+
+/* ... rest of the existing styles ... */
