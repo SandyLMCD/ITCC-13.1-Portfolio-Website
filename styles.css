@@ -1257,6 +1257,12 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .cta-text {
+    font-size: 15px;
+    padding-left: 10px; /* Add padding */
+    padding-right: 10px; /* Add padding */
+  }
+
   .credit-line {
     padding-top: 6px;
     padding-bottom: 6px;
