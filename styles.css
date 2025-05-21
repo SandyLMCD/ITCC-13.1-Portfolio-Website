@@ -1018,6 +1018,24 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .credit-line {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .credit-text {
+    color: #fff9f2;
+    font-size: 9px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
   .footer-mobile-btn {
     display: flex;
     justify-content: center;
@@ -1236,6 +1254,24 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .credit-line {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .credit-text {
+    color: #fff9f2;
+    font-size: 9px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
   .footer-section {
     padding-left: 15px;
     padding-right: 15px;
