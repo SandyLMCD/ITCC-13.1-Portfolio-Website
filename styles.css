@@ -757,6 +757,24 @@ body {
 /* <!----Responsive Styles----> */
 
 @media (max-width: 1187px) {
+  .credit-line {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .credit-text {
+    color: #fff9f2;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
   .footer-section {
     padding-left: 40px;
     padding-right: 40px;
@@ -851,6 +869,24 @@ body {
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .credit-line {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .credit-text {
+    color: #fff9f2;
+    font-size: 11px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
   .footer-section {
     padding-left: 20px;
     padding-right: 20px;
