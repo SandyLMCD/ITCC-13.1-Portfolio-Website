@@ -753,6 +753,17 @@ body {
 /* <!----Responsive Styles----> */
 
 @media (max-width: 1187px) {
+  .overlay {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: rgba(235, 106, 94, 0.2);
+    z-index: 5;
+    display: none;
+  }
+
   .projects-desription {
     width: 100%;
     padding-left: 15px;
@@ -810,6 +821,11 @@ body {
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .overlay {
+    width: 100vw;
+    height: auto;
+  }
+
   .projects-text {
     width: 100%;
     font-size: 18px; /* Adjust font size */
@@ -910,6 +926,11 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .cta-text {
     font-size: 12px; /* Adjust button text size */
   }
@@ -980,6 +1001,11 @@ body {
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .about-section {
     padding: 45px; /* Reduce padding for smaller screens */
     text-align: center; /* Center align text */
@@ -1044,6 +1070,11 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .about-title {
     font-size: 24px; /* Further reduce font size for mobile */
   }
