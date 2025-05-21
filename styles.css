@@ -753,6 +753,10 @@ body {
 /* <!----Responsive Styles----> */
 
 @media (max-width: 1187px) {
+  .social-links {
+    display: none;
+  }
+
   .overlay {
     width: 100%;
     height: auto;
@@ -821,6 +825,10 @@ body {
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .social-links {
+    display: none;
+  }
+
   .overlay {
     width: 100vw;
     height: auto;
@@ -1005,6 +1013,10 @@ body {
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .social-links {
+    display: none;
+  }
+
   .overlay {
     width: 100vw;
     height: 100vh;
