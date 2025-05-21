@@ -926,6 +926,10 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .social-links {
+    display: none;
+  }
+
   .overlay {
     width: 100vw;
     height: 100vh;
