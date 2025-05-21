@@ -372,57 +372,41 @@ body {
 }
 
 .project-title-purple {
-  align-self: stretch;
-  text-align: center;
   color: #5c0a48;
   font-size: 45px;
 }
 
 .project-title-pink {
-  align-self: stretch;
-  text-align: center;
   color: #813a40;
   font-size: 45px;
 }
 
 .project-title-dark-gray {
-  align-self: stretch;
-  text-align: center;
   color: #222325;
   font-size: 45px;
 }
 
 .project-title-brown {
-  align-self: stretch;
-  text-align: center;
   color: #96452a;
   font-size: 45px;
 }
 
 .project-title-light-blue {
-  align-self: stretch;
-  text-align: center;
   color: #496baa;
   font-size: 45px;
 }
 
 .project-title-green {
-  align-self: stretch;
-  text-align: center;
   color: #34762e;
   font-size: 45px;
 }
 
 .project-title-dark-red {
-  align-self: stretch;
-  text-align: center;
   color: #85301b;
   font-size: 45px;
 }
 
 .project-title-black {
-  align-self: stretch;
-  text-align: center;
   color: #202020;
   font-size: 41px;
 }
@@ -434,6 +418,19 @@ body {
   font-weight: 400;
   line-height: 16px;
   word-wrap: break-word;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .collab-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collab-text {
+    font-size: 14px;
+  }
 }
 
 .collab-text-black {
@@ -453,6 +450,7 @@ body {
   align-items: center;
   gap: 12px;
   display: inline-flex;
+  text-align: center;
 }
 
 .project-button-teal {
@@ -755,6 +753,25 @@ body {
 /* <!----Responsive Styles----> */
 
 @media (max-width: 1187px) {
+  .projects-desription {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .projects-text {
+    font-size: 20px; /* Adjust font size */
+    line-height: 1.5; /* Increase line height for readability */
+  }
+
+  .project-button {
+    width: 60%;
+    height: auto;
+    min-width: 100px;
+    max-width: 180px;
+    padding: 8px 12px;
+  }
+
   .projects-subtitle {
     display: none;
   }
@@ -762,10 +779,71 @@ body {
   .projects-quote {
     display: none;
   }
+
+  .projects-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-item {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .project-image,
+  .project-details {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .project-title {
+    text-wrap: break-word;
+    font-size: 36px;
+    line-height: 1.2; /* Increase line height for readability */
+  }
+
+  .button-text {
+    font-size: 20px; /* Adjust button text size */
+    width: 100%; /* Full width for button text */
+  }
 }
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
+  .projects-text {
+    width: 100%;
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .project-button {
+    width: 80%;
+    height: auto; /* Allow height to adjust based on content */
+    min-width: 80px;
+    max-width: 140px;
+    padding: 6px 8px;
+  }
+
+  .projects-section {
+    padding-left: 20px; /* Reduce padding */
+    padding-right: 20px; /* Reduce padding */
+  }
+
+  .project-item {
+    max-width: 100%; /* Full width for project items */
+    gap: 12px; /* Space between items */
+  }
+
+  .project-title {
+    text-wrap: break-word;
+    font-size: 27px; /* Adjust font size */
+    line-height: 1.2; /* Increase line height for readability */
+  }
+
+  .button-text {
+    font-size: 18px; /* Adjust button text size */
+    width: 100%; /* Full width for button text */
+  }
+
   .container {
     flex-direction: column; /* Stack elements vertically */
   }
@@ -801,6 +879,7 @@ body {
   }
 
   .projects-title {
+    text-wrap: break-word;
     font-size: 36px; /* Adjust font size */
     margin-bottom: 12px;
   }
@@ -831,13 +910,50 @@ body {
 
 /* For mobile devices */
 @media (max-width: 480px) {
+  .cta-text {
+    font-size: 12px; /* Adjust button text size */
+  }
+
+  .projects-text {
+    font-size: 16px; /* Further reduce font size */
+    line-height: 1.5; /* Increase line height for readability */
+  }
+  .projects-title {
+    font-size: 24px; /* Further reduce font size */
+    line-height: 1.2; /* Increase line height for readability */
+  }
+  .project-button {
+    width: 100%;
+    height: 5%; /* Allow height to adjust based on content */
+    min-width: 60px;
+    max-width: 100px;
+    padding: 0px;
+  }
+
+  .projects-section {
+    padding-left: 20px; /* Reduce padding */
+    padding-right: 20px; /* Reduce padding */
+  }
+
+  .project-item {
+    max-width: 100%; /* Full width for project items */
+    gap: 12px; /* Space between items */
+  }
+
+  .project-title {
+    text-wrap: break-word;
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.2; /* Increase line height for readability */
+  }
+
+  .button-text {
+    font-size: 14px; /* Adjust button text size */
+    width: 100%; /* Full width for button text */
+  }
+
   .hero-title {
     font-size: 100px; /* Further reduce font size */
     line-height: 100px; /* Adjust line height */
-  }
-
-  .cta-text {
-    font-size: 20px; /* Adjust font size */
   }
 
   .about-title {
@@ -847,14 +963,6 @@ body {
   .description-text,
   .description-underline {
     font-size: 18px; /* Adjust font size */
-  }
-
-  .project-title {
-    font-size: 36px; /* Adjust font size */
-  }
-
-  .button-text {
-    font-size: 20px; /* Adjust button text size */
   }
 
   .footer-title {
@@ -929,7 +1037,7 @@ body {
     padding: 0px; /* Adjust padding */
 
     .cta-text {
-      font-size: 18px; /* Adjust button text size */
+      font-size: 15px; /* Adjust button text size */
     }
   }
 }
